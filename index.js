@@ -8,7 +8,7 @@ const cookiePaser = require("cookie-parser");
 const Blog = require("./models/blog");
 
 const userRoute = require("./routes/user");
-const blogRoute = require("./routes/blog");
+const blogRoute = require("./routes/blog");s
 
 const {
   checkForAuthenticationCookie,
@@ -40,4 +40,4 @@ app.get("/", async (req, res) => {
 app.use("/user", userRoute);
 app.use("/blog", blogRoute);
 
-app.listen(PORT)
+module.exports=app
